@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="card.css">
 </head>
 
 <body>
@@ -13,90 +17,238 @@
         <aside>
             <div class="top">
                 <div class="logo">
-                    <h2>Swikar<span>D.</span></h2>
+                    <h2>S<span>D</span></h2>
                 </div>
-                <div class="close">
-                    <svg class="icon" viewBox="0 0 24 24">
-                        <path d="M18 6L6 18M6 6l12 12"
-                              stroke="currentColor" stroke-width="2"
-                              stroke-linecap="round"/>
-                    </svg>
-                </div>
+                <div class="close">&#10005;</div>
             </div>
 
             <div class="sidebar">
-
-                <a href="#">
+                <a href="#" class="active">
                     <svg class="icon" viewBox="0 0 24 24">
-                        <path d="M3 6h18M3 12h18M3 18h18"
-                              stroke="currentColor" stroke-width="2"/>
+                        <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" />
                     </svg>
                     <h3>Dashboard</h3>
                 </a>
-
                 <a href="#">
                     <svg class="icon" viewBox="0 0 24 24">
-                        <path d="M5 4h14v16H5z"
-                              stroke="currentColor" stroke-width="2"
-                              fill="none"/>
+                        <path d="M5 4h14v16H5z" stroke="currentColor" stroke-width="2" fill="none" />
                     </svg>
                     <h3>Courses</h3>
                 </a>
-
                 <a href="#">
                     <svg class="icon" viewBox="0 0 24 24">
-                        <path d="M4 6h16M4 12h16M4 18h10"
-                              stroke="currentColor" stroke-width="2"/>
+                        <path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" />
                     </svg>
                     <h3>Assignments</h3>
                 </a>
-
                 <a href="#">
                     <svg class="icon" viewBox="0 0 24 24">
-                        <circle cx="12" cy="12" r="9"
-                                stroke="currentColor" stroke-width="2"
-                                fill="none"/>
-                        <path d="M12 7v5l3 2"
-                              stroke="currentColor" stroke-width="2"/>
+                        <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none" />
+                        <path d="M12 7v5l3 2" stroke="currentColor" stroke-width="2" />
                     </svg>
                     <h3>Attendance</h3>
                 </a>
-
                 <a href="#">
                     <svg class="icon" viewBox="0 0 24 24">
-                        <path d="M6 4h12v16H6z"
-                              stroke="currentColor" stroke-width="2"
-                              fill="none"/>
-                        <path d="M8 8h8M8 12h8"
-                              stroke="currentColor" stroke-width="2"/>
+                        <path d="M6 4h12v16H6z" stroke="currentColor" stroke-width="2" fill="none" />
+                        <path d="M8 8h8M8 12h8" stroke="currentColor" stroke-width="2" />
                     </svg>
                     <h3>Exams</h3>
                 </a>
-
                 <a href="#">
                     <svg class="icon" viewBox="0 0 24 24">
-                        <circle cx="12" cy="8" r="4"
-                                stroke="currentColor" stroke-width="2"
-                                fill="none"/>
-                        <path d="M4 20c1.5-4 14.5-4 16 0"
-                              stroke="currentColor" stroke-width="2"/>
+                        <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2" fill="none" />
+                        <path d="M4 20c1.5-4 14.5-4 16 0" stroke="currentColor" stroke-width="2" />
                     </svg>
                     <h3>Profile</h3>
                 </a>
-
             </div>
         </aside>
 
-        <!-- MAIN -->
+        <!-- MAIN CONTENT -->
         <main>
-            <h1>Welcome, Student</h1>
+            <h1 style="margin-bottom: 1rem; color: #333;">Student Dashboard</h1>
+
+            <div class="insights">
+                <!-- Card 1: Total Courses -->
+                <div class="stat-card courses-card">
+                    <div class="card-header">
+                        <div class="icon-wrapper courses-icon">
+                            <svg class="card-icon" viewBox="0 0 24 24">
+                                <path d="M12 3L2 8l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2"
+                                    fill="none" />
+                                <path d="M2 8v6c0 2 4 4 10 4s10-2 10-4V8" stroke="currentColor" stroke-width="2"
+                                    fill="none" />
+                            </svg>
+                        </div>
+
+                        <div class="stat-info">
+                            <h3>Total Courses</h3>
+                            <h2>6</h2>
+                            <p>Active Semester</p>
+                        </div>
+
+                        <div class="progress-circle">
+                            <svg width="70" height="70">
+                                <circle cx="35" cy="35" r="30" stroke="#e0e0e0" stroke-width="8" fill="none" />
+                                <circle cx="35" cy="35" r="30" stroke="#7380ec" stroke-width="8" fill="none"
+                                    stroke-dasharray="188" stroke-dashoffset="47" stroke-linecap="round"
+                                    transform="rotate(-90 35 35)" />
+                            </svg>
+                            <span class="percentage">75%</span>
+                        </div>
+                    </div>
+
+                    <div class="courses-list-inline">
+                        <ul>
+                            <li>Introduction to Computer Science</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Web Development Fundamentals</li>
+                        </ul>
+                        <a href="#courses" class="view-all-btn">View All Courses →</a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Assignments -->
+                <div class="stat-card assignments-card">
+                    <div class="card-header">
+                        <div class="icon-wrapper assignments-icon">
+                            <svg class="card-icon" viewBox="0 0 24 24">
+                                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"
+                                    stroke="currentColor" stroke-width="2" fill="none" />
+                                <path d="M9 5a2 2 0 002 2h2a2 2 0 002-2" stroke="currentColor" stroke-width="2"
+                                    fill="none" />
+                                <path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+
+                        <div class="stat-info">
+                            <h3>Assignments</h3>
+                            <h2>8/12</h2>
+                            <p>Completed</p>
+                        </div>
+
+                        <div class="progress-circle">
+                            <svg width="70" height="70">
+                                <circle cx="35" cy="35" r="30" stroke="#e0e0e0" stroke-width="8" fill="none" />
+                                <circle cx="35" cy="35" r="30" stroke="#ff6b6b" stroke-width="8" fill="none"
+                                    stroke-dasharray="188" stroke-dashoffset="63" stroke-linecap="round"
+                                    transform="rotate(-90 35 35)" />
+                            </svg>
+                            <span class="percentage">67%</span>
+                        </div>
+                    </div>
+
+                    <div class="assignments-list-inline">
+                        <ul>
+                            <li>
+                                <span class="assignment-name">Math Problem Set 5</span>
+                                <span class="assignment-status completed">✓</span>
+                            </li>
+                            <li>
+                                <span class="assignment-name">Physics Lab Report</span>
+                                <span class="assignment-status pending">Pending</span>
+                            </li>
+                            <li>
+                                <span class="assignment-name">History Essay</span>
+                                <span class="assignment-status completed">✓</span>
+                            </li>
+                        </ul>
+                        <a href="#assignments" class="view-all-btn assignments-btn">View All Assignments →</a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Attendance -->
+                <div class="stat-card attendance-card">
+                    <div class="card-header">
+                        <div class="icon-wrapper attendance-icon">
+                            <svg class="card-icon" viewBox="0 0 24 24">
+                                <path d="M9 11l3 3 8-8" stroke="currentColor" stroke-width="2" fill="none"
+                                    stroke-linecap="round" />
+                                <path d="M20 12v6a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h9" stroke="currentColor"
+                                    stroke-width="2" fill="none" />
+                            </svg>
+                        </div>
+
+                        <div class="stat-info">
+                            <h3>Attendance</h3>
+                            <h2>92%</h2>
+                            <p>This Month</p>
+                        </div>
+
+                        <div class="progress-circle">
+                            <svg width="70" height="70">
+                                <circle cx="35" cy="35" r="30" stroke="#e0e0e0" stroke-width="8" fill="none" />
+                                <circle cx="35" cy="35" r="30" stroke="#4ecdc4" stroke-width="8" fill="none"
+                                    stroke-dasharray="188" stroke-dashoffset="15" stroke-linecap="round"
+                                    transform="rotate(-90 35 35)" />
+                            </svg>
+                            <span class="percentage">92%</span>
+                        </div>
+                    </div>
+
+                    <div class="attendance-chart">
+                        <div class="attendance-streak">
+                            <div class="streak-icon">🔥</div>
+                            <div class="streak-info">  
+                                <span class="streak-number">5</span>
+                                <span class="streak-label">Day Streak</span>
+                            </div>
+                        </div>
+
+                        <div class="weekly-calendar">
+                            <div class="week-day">
+                                <span class="day-label">Mon</span>
+                                <div class="day-indicator present"></div>
+                            </div>
+                            <div class="week-day">
+                                <span class="day-label">Tue</span>
+                                <div class="day-indicator present"></div>
+                            </div>
+                            <div class="week-day">
+                                <span class="day-label">Wed</span>
+                                <div class="day-indicator absent"></div>
+                            </div>
+                            <div class="week-day">
+                                <span class="day-label">Thu</span>
+                                <div class="day-indicator present"></div>
+                            </div>
+                            <div class="week-day">
+                                <span class="day-label">Fri</span>
+                                <div class="day-indicator present"></div>
+                            </div>
+                            <div class="week-day">
+                                <span class="day-label">Sat</span>
+                                <div class="day-indicator present"></div>
+                            </div>
+                            <div class="week-day">
+                                <span class="day-label">Sun</span>
+                                <div class="day-indicator present"></div>
+                            </div>
+                        </div>
+
+                        <a href="#attendance" class="view-all-btn attendance-btn">View Details →</a>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <!-- RIGHT PANEL -->
         <div class="right">
-            <h3>Right Side</h3>
+            <h3>Right Panel</h3>
+            <p>Additional info or widgets can go here.</p>
         </div>
 
     </div>
+
+    <script>
+        const closeBtn = document.querySelector("aside .close");
+        const aside = document.querySelector("aside");
+
+        closeBtn.addEventListener("click", () => {
+            aside.classList.toggle("collapsed");
+        });
+    </script>
 </body>
+
 </html>
