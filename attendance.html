@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daily attendance record - LearnIn">
+    <title>Attendance | LearnIn</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="sidebar-toggle">
+
+    <div class="mob-header">
+        <a href="index.html">Learn<span>In</span></a>
+        <label for="sidebar-toggle" class="menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+    <label for="sidebar-toggle" class="overlay"></label>
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-logo"><a href="index.html">Learn<span>In</span></a></div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="nav-link"><i class="fas fa-th-large"></i> Dashboard</a>
+            <a href="attendance.html" class="nav-link active"><i class="fas fa-calendar-check"></i> Attendance</a>
+            <a href="routine.html" class="nav-link"><i class="fas fa-clock"></i> Routine</a>
+            <a href="notifications.html" class="nav-link"><i class="fas fa-bell"></i> Notifications</a>
+            <a href="profile.html" class="nav-link"><i class="fas fa-user"></i> Profile</a>
+        </nav>
+        <div class="sidebar-user">
+            <img src="https://ui-avatars.com/api/?name=Aavash+Sharma&background=e8723a&color=fff&size=76"
+                alt="Aavash Sharma" class="avatar">
+            <div class="user-info">
+                <p>Aavash Sharma</p>
+                <small>Grade 12 · Science</small>
+            </div>
+        </div>
+    </aside>
+
+    <div class="main">
+        <header class="top-bar">
+            <h1>Attendance</h1>
+            <div class="top-right">
+                <span class="date-info">Session 2081/82</span>
+                <a href="notifications.html" class="bell"><i class="fas fa-bell"></i><span class="bell-dot"></span></a>
+            </div>
+        </header>
+
+        <main class="content">
+
+            <!-- monthly summary -->
+            <h2 class="sec-heading" style="margin-top:0">Monthly Summary — Falgun 2081</h2>
+            <div class="att-cards">
+                <div class="att-box">
+                    <p class="att-num green">22</p>
+                    <p class="att-text">Days Present</p>
+                </div>
+                <div class="att-box">
+                    <p class="att-num red">2</p>
+                    <p class="att-text">Days Absent</p>
+                </div>
+                <div class="att-box">
+                    <p class="att-num yellow">1</p>
+                    <p class="att-text">Late Arrivals</p>
+                </div>
+                <div class="att-box">
+                    <p class="att-num orange">92%</p>
+                    <p class="att-text">Attendance Rate</p>
+                </div>
+            </div>
+
+            <!-- daily log -->
+            <h2 class="sec-heading">Daily Attendance Log</h2>
+            <div class="table-box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Day</th>
+                            <th>Status</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Falgun 01</td>
+                            <td>Sunday</td>
+                            <td><span class="badge badge-present">Present</span></td>
+                            <td class="gray small">—</td>
+                        </tr>
+                        <tr>
+                            <td>Falgun 02</td>
+                            <td>Monday</td>
+                            <td><span class="badge badge-present">Present</span></td>
+                            <td class="gray small">—</td>
+                        </tr>
+                        <tr>
+                            <td>Falgun 03</td>
+                            <td>Tuesday</td>
+                            <td><span class="badge badge-present">Present</span></td>
+                            <td class="gray small">—</td>
+                        </tr>
+                        <tr>
+                            <td>Falgun 04</td>
+                            <td>Wednesday</td>
+                            <td><span class="badge badge-late">Late</span></td>
+                            <td class="small">Arrived 15 min late</td>
+                        </tr>
+                        <tr>
+                            <td>Falgun 05</td>
+                            <td>Thursday</td>
+                            <td><span class="badge badge-present">Present</span></td>
+                            <td class="gray small">—</td>
+                        </tr>
+                        <tr>
+                            <td>Falgun 06</td>
+                            <td>Friday</td>
+                            <td><span class="badge badge-present">Present</span></td>
+                            <td class="gray small">—</td>
+                        </tr>
+                        <tr>
+                            <td>Falgun 07</td>
+                            <td>Saturday</td>
+                            <td><span class="badge badge-holiday">Holiday</span></td>
+                            <td class="gray small">Weekend</td>
+                        </tr>
+                        <tr>
+                            <td>Falgun 08</td>
+                            <td>Sunday</td>
+                            <td><span class="badge badge-present">Present</span></td>
+                            <td class="gray small">—</td>
+                        </tr>
+                        <tr>
+                            <td>Falgun 09</td>
+                            <td>Monday</td>
+                            <td><span class="badge badge-absent">Absent</span></td>
+                            <td class="small">Sick leave</td>
+                        </tr>
+                        <tr>
+                            <td>Falgun 10</td>
+                            <td>Tuesday</td>
+                            <td><span class="badge badge-present">Present</span></td>
+                            <td class="gray small">—</td>
+                        </tr>
+                        <tr>
+                            <td>Falgun 11</td>
+                            <td>Wednesday</td>
+                            <td><span class="badge badge-present">Present</span></td>
+                            <td class="gray small">—</td>
+                        </tr>
+                        <tr>
+                            <td>Falgun 12</td>
+                            <td>Thursday</td>
+                            <td><span class="badge badge-absent">Absent</span></td>
+                            <td class="small">Family event</td>
+                        </tr>
+                        <tr>
+                            <td>Falgun 13</td>
+                            <td>Friday</td>
+                            <td><span class="badge badge-present">Present</span></td>
+                            <td class="gray small">—</td>
+                        </tr>
+                        <tr>
+                            <td>Falgun 14</td>
+                            <td>Saturday</td>
+                            <td><span class="badge badge-holiday">Holiday</span></td>
+                            <td class="gray small">Weekend</td>
+                        </tr>
+                        <tr>
+                            <td>Falgun 15</td>
+                            <td>Sunday</td>
+                            <td><span class="badge badge-present">Present</span></td>
+                            <td class="gray small">Today</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <strong>LearnIn</strong> · &copy; 2081/2082 Sagarmatha Secondary School ·
+            Affiliated with <span class="accent">NEB</span>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weekly class routine - LearnIn">
+    <title>Routine | LearnIn</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="mob-header">
+        <a href="index.html">Learn<span>In</span></a>
+        <label for="sidebar-toggle" class="menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+    <label for="sidebar-toggle" class="overlay"></label>
+
+    <aside class="sidebar">
+        <div class="sidebar-logo"><a href="index.html">Learn<span>In</span></a></div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="nav-link"><i class="fas fa-th-large"></i> Dashboard</a>
+            <a href="attendance.html" class="nav-link"><i class="fas fa-calendar-check"></i> Attendance</a>
+            <a href="routine.html" class="nav-link active"><i class="fas fa-clock"></i> Routine</a>
+            <a href="notifications.html" class="nav-link"><i class="fas fa-bell"></i> Notifications</a>
+            <a href="profile.html" class="nav-link"><i class="fas fa-user"></i> Profile</a>
+        </nav>
+        <div class="sidebar-user">
+            <img src="https://ui-avatars.com/api/?name=Aavash+Sharma&background=e8723a&color=fff&size=76"
+                alt="Aavash Sharma" class="avatar">
+            <div class="user-info">
+                <p>Aavash Sharma</p><small>Grade 12 · Science</small>
+            </div>
+        </div>
+    </aside>
+
+    <div class="main">
+        <header class="top-bar">
+            <h1>Weekly Routine</h1>
+            <div class="top-right">
+                <span class="date-info">Grade 12 · Science · Newton</span>
+                <a href="notifications.html" class="bell"><i class="fas fa-bell"></i><span class="bell-dot"></span></a>
+            </div>
+        </header>
+
+        <main class="content">
+
+            <!-- just the schedule, nothing else -->
+            <h2 class="sec-heading" style="margin-top:0">Weekly Schedule</h2>
+            <div class="table-box">
+                <table class="schedule">
+                    <thead>
+                        <tr>
+                            <th>Period</th>
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1st</td>
+                            <td><span class="subj">Nepali</span><span class="tchr">HP</span></td>
+                            <td><span class="subj">Nepali</span><span class="tchr">HP</span></td>
+                            <td><span class="subj">Nepali</span><span class="tchr">HP</span></td>
+                            <td><span class="subj">Physics</span><span class="tchr">RP</span></td>
+                            <td><span class="subj">Chemistry</span><span class="tchr">ST</span></td>
+                            <td><span class="subj">Mathematics</span><span class="tchr">DG</span></td>
+                        </tr>
+                        <tr>
+                            <td>2nd</td>
+                            <td><span class="subj">Mathematics</span><span class="tchr">DG</span></td>
+                            <td><span class="subj">Physics</span><span class="tchr">RP</span></td>
+                            <td><span class="subj">Chemistry</span><span class="tchr">ST</span></td>
+                            <td><span class="subj">English</span><span class="tchr">AS</span></td>
+                            <td><span class="subj">Mathematics</span><span class="tchr">DG</span></td>
+                            <td><span class="subj">Physics</span><span class="tchr">RP</span></td>
+                        </tr>
+                        <tr>
+                            <td>3rd</td>
+                            <td><span class="subj">Chemistry</span><span class="tchr">ST</span></td>
+                            <td><span class="subj">English</span><span class="tchr">AS</span></td>
+                            <td><span class="subj">English</span><span class="tchr">AS</span></td>
+                            <td><span class="subj">Mathematics</span><span class="tchr">DG</span></td>
+                            <td><span class="subj">Physics</span><span class="tchr">RP</span></td>
+                            <td><span class="subj">Chemistry</span><span class="tchr">ST</span></td>
+                        </tr>
+                        <tr>
+                            <td>4th</td>
+                            <td><span class="subj">Physics</span><span class="tchr">RP</span></td>
+                            <td><span class="subj">Mathematics</span><span class="tchr">DG</span></td>
+                            <td><span class="subj">Physics</span><span class="tchr">RP</span></td>
+                            <td><span class="subj">Chemistry</span><span class="tchr">ST</span></td>
+                            <td><span class="subj">English</span><span class="tchr">AS</span></td>
+                            <td><span class="subj">Computer</span><span class="tchr">BK</span></td>
+                        </tr>
+                        <tr>
+                            <td>5th</td>
+                            <td><span class="subj">English</span><span class="tchr">AS</span></td>
+                            <td><span class="subj">Chemistry</span><span class="tchr">ST</span></td>
+                            <td><span class="subj">Mathematics</span><span class="tchr">DG</span></td>
+                            <td><span class="subj">Computer</span><span class="tchr">BK</span></td>
+                            <td><span class="subj">Computer</span><span class="tchr">BK</span></td>
+                            <td><span class="subj">Physics</span><span class="tchr">RP</span></td>
+                        </tr>
+                        <tr>
+                            <td>6th</td>
+                            <td><span class="subj">Computer</span><span class="tchr">BK</span></td>
+                            <td><span class="subj">Computer</span><span class="tchr">BK</span></td>
+                            <td><span class="subj">Computer</span><span class="tchr">BK</span></td>
+                            <td><span class="subj">Physics</span><span class="tchr">RP</span></td>
+                            <td><span class="subj">Mathematics</span><span class="tchr">DG</span></td>
+                            <td><span class="subj">Chemistry</span><span class="tchr">ST</span></td>
+                        </tr>
+                        <tr>
+                            <td>7th</td>
+                            <td><span class="subj">Physics</span><span class="tchr">RP</span></td>
+                            <td><span class="subj">Physics</span><span class="tchr">RP</span></td>
+                            <td><span class="subj">Chemistry</span><span class="tchr">ST</span></td>
+                            <td><span class="subj">Mathematics</span><span class="tchr">DG</span></td>
+                            <td><span class="subj">Physics</span><span class="tchr">RP</span></td>
+                            <td><span class="subj">Mathematics</span><span class="tchr">DG</span></td>
+                        </tr>
+                        <tr>
+                            <td>8th</td>
+                            <td><span class="subj">Mathematics</span><span class="tchr">DG</span></td>
+                            <td><span class="subj">Mathematics</span><span class="tchr">DG</span></td>
+                            <td><span class="subj">Physics</span><span class="tchr">RP</span></td>
+                            <td><span class="subj">Chemistry</span><span class="tchr">ST</span></td>
+                            <td><span class="subj">Chemistry</span><span class="tchr">ST</span></td>
+                            <td><span class="subj">Computer</span><span class="tchr">BK</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <strong>LearnIn</strong> · &copy; 2081/2082 Sagarmatha Secondary School ·
+            Affiliated with <span class="accent">NEB</span>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LearnIn Student Dashboard">
+    <title>Dashboard | LearnIn</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- mobile toggle -->
+    <input type="checkbox" id="sidebar-toggle">
+
+    <div class="mob-header">
+        <a href="index.html">Learn<span>In</span></a>
+        <label for="sidebar-toggle" class="menu-btn" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </label>
+    </div>
+
+    <label for="sidebar-toggle" class="overlay"></label>
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <a href="index.html">Learn<span>In</span></a>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="index.html" class="nav-link active">
+                <i class="fas fa-th-large"></i> Dashboard
+            </a>
+            <a href="attendance.html" class="nav-link">
+                <i class="fas fa-calendar-check"></i> Attendance
+            </a>
+            <a href="routine.html" class="nav-link">
+                <i class="fas fa-clock"></i> Routine
+            </a>
+            <a href="notifications.html" class="nav-link">
+                <i class="fas fa-bell"></i> Notifications
+            </a>
+            <a href="profile.html" class="nav-link">
+                <i class="fas fa-user"></i> Profile
+            </a>
+        </nav>
+
+        <div class="sidebar-user">
+            <img src="https://ui-avatars.com/api/?name=Aavash+Sharma&background=e8723a&color=fff&size=76"
+                alt="Aavash Sharma" class="avatar">
+            <div class="user-info">
+                <p>Aavash Sharma</p>
+                <small>Grade 12 · Science</small>
+            </div>
+        </div>
+    </aside>
+
+    <!-- main page -->
+    <div class="main">
+
+        <header class="top-bar">
+            <h1>Dashboard</h1>
+            <div class="top-right">
+                <span class="date-info">
+                    <i class="far fa-calendar-alt"></i>&nbsp; Falgun 15, 2081 BS
+                </span>
+                <a href="notifications.html" class="bell" aria-label="Notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="bell-dot"></span>
+                </a>
+            </div>
+        </header>
+
+        <main class="content">
+
+            <p class="welcome">Namaste, Aavash 👋</p>
+            <p class="welcome-sub">Here's your academic summary for today.</p>
+
+            <!-- dashboard cards -->
+            <div class="dash-cards">
+
+                <a href="attendance.html" class="card-link">
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-icon green">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <p class="card-label">Today's Attendance</p>
+                        <p class="card-number green">Present</p>
+                        <p class="card-note">Overall: 92% this month</p>
+                    </div>
+                </a>
+
+                <a href="routine.html" class="card-link">
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-icon blue">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <p class="card-label">Classes Today</p>
+                        <p class="card-number">8 Periods</p>
+                        <p class="card-note">Next: Chemistry · 3rd Period</p>
+                    </div>
+                </a>
+
+                <a href="profile.html" class="card-link">
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-icon purple">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <p class="card-label">Sent-up Exam GPA</p>
+                        <p class="card-number">3.65</p>
+                        <p class="card-note">Grade A+ · Intermediate</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- this week's attendance -->
+            <h2 class="sec-heading">This Week's Attendance</h2>
+            <div class="table-box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Falgun 10</td>
+                            <td><span class="badge badge-present">Present</span></td>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Falgun 11</td>
+                            <td><span class="badge badge-present">Present</span></td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Falgun 12</td>
+                            <td><span class="badge badge-absent">Absent</span></td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Falgun 13</td>
+                            <td><span class="badge badge-present">Present</span></td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Falgun 14</td>
+                            <td><span class="badge badge-present">Present</span></td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Falgun 15</td>
+                            <td><span class="badge badge-present">Present</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- today's routine -->
+            <h2 class="sec-heading">Today's Routine (Sunday)</h2>
+            <div class="table-box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Period</th>
+                            <th>Subject</th>
+                            <th>Teacher</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1st Period</td>
+                            <td>Nepali</td>
+                            <td>HP</td>
+                        </tr>
+                        <tr>
+                            <td>2nd Period</td>
+                            <td>Mathematics</td>
+                            <td>DG</td>
+                        </tr>
+                        <tr>
+                            <td>3rd Period</td>
+                            <td>Chemistry</td>
+                            <td>ST</td>
+                        </tr>
+                        <tr>
+                            <td>4th Period</td>
+                            <td>Physics</td>
+                            <td>RP</td>
+                        </tr>
+                        <tr>
+                            <td>5th Period</td>
+                            <td>English</td>
+                            <td>AS</td>
+                        </tr>
+                        <tr>
+                            <td>6th Period</td>
+                            <td>Computer</td>
+                            <td>BK</td>
+                        </tr>
+                        <tr>
+                            <td>7th Period</td>
+                            <td>Physics</td>
+                            <td>RP</td>
+                        </tr>
+                        <tr>
+                            <td>8th Period</td>
+                            <td>Mathematics</td>
+                            <td>DG</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <strong>LearnIn</strong> · &copy; 2081/2082 Sagarmatha Secondary School ·
+            Affiliated with <span class="accent">NEB</span>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

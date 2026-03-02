@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student profile - LearnIn">
+    <title>Profile | LearnIn</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="mob-header">
+        <a href="index.html">Learn<span>In</span></a>
+        <label for="sidebar-toggle" class="menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+    <label for="sidebar-toggle" class="overlay"></label>
+
+    <aside class="sidebar">
+        <div class="sidebar-logo"><a href="index.html">Learn<span>In</span></a></div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="nav-link"><i class="fas fa-th-large"></i> Dashboard</a>
+            <a href="attendance.html" class="nav-link"><i class="fas fa-calendar-check"></i> Attendance</a>
+            <a href="routine.html" class="nav-link"><i class="fas fa-clock"></i> Routine</a>
+            <a href="notifications.html" class="nav-link"><i class="fas fa-bell"></i> Notifications</a>
+            <a href="profile.html" class="nav-link active"><i class="fas fa-user"></i> Profile</a>
+        </nav>
+        <div class="sidebar-user">
+            <img src="https://ui-avatars.com/api/?name=Aavash+Sharma&background=e8723a&color=fff&size=76"
+                alt="Aavash Sharma" class="avatar">
+            <div class="user-info">
+                <p>Aavash Sharma</p><small>Grade 12 · Science</small>
+            </div>
+        </div>
+    </aside>
+
+    <div class="main">
+        <header class="top-bar">
+            <h1>Profile</h1>
+            <div class="top-right">
+                <span class="date-info">Student Information</span>
+                <a href="notifications.html" class="bell"><i class="fas fa-bell"></i><span class="bell-dot"></span></a>
+            </div>
+        </header>
+
+        <main class="content">
+
+            <!-- profile header -->
+            <div class="profile-top">
+                <img src="https://ui-avatars.com/api/?name=Aavash+Sharma&size=180&background=e8723a&color=fff"
+                    alt="Aavash Sharma" class="profile-pic">
+                <div>
+                    <h2>Aavash Sharma</h2>
+                    <p class="subtitle"><i class="fas fa-id-card"></i>&nbsp; NEB Symbol No: 20810452</p>
+                    <div class="badge-row">
+                        <span class="badge badge-accent">Science Stream</span>
+                        <span class="badge badge-secondary">Grade 12 · Newton Section</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- personal details -->
+            <h2 class="sec-heading">Personal Details</h2>
+            <div class="info-boxes">
+                <div class="info-box">
+                    <p class="info-title">Full Name</p>
+                    <p class="info-data">Aavash Mani Sharma</p>
+                </div>
+                <div class="info-box">
+                    <p class="info-title">Email Address</p>
+                    <p class="info-data">fake-email-address@gmai.lcom</p>
+                </div>
+                <div class="info-box">
+                    <p class="info-title">Phone Number</p>
+                    <p class="info-data">+977-984XXXXXXX</p>
+                </div>
+                <div class="info-box">
+                    <p class="info-title">Father's Name</p>
+                    <p class="info-data">Mr. Keshav Sharma</p>
+                </div>
+                <div class="info-box">
+                    <p class="info-title">NEB Registration No.</p>
+                    <p class="info-data">7964521033</p>
+                </div>
+                <div class="info-box">
+                    <p class="info-title">Date of Birth</p>
+                    <p class="info-data">2063-05-15 (BS)</p>
+                </div>
+            </div>
+
+            <!-- additional info -->
+            <h2 class="sec-heading">Additional Information</h2>
+            <div class="info-boxes">
+                <div class="info-box">
+                    <p class="info-title">Permanent Address</p>
+                    <p class="info-data">Pokhara-15, Kaski, Nepal</p>
+                </div>
+                <div class="info-box">
+                    <p class="info-title">Blood Group</p>
+                    <p class="info-data">B+ Positive</p>
+                </div>
+                <div class="info-box">
+                    <p class="info-title">Local Guardian</p>
+                    <p class="info-data">Mrs. Sita Sharma</p>
+                </div>
+                <div class="info-box">
+                    <p class="info-title">Bus Route Code</p>
+                    <p class="info-data">B-12 (Lakeside – College)</p>
+                </div>
+                <div class="info-box">
+                    <p class="info-title">Hostel Status</p>
+                    <p class="info-data">Day Scholar</p>
+                </div>
+                <div class="info-box">
+                    <p class="info-title">Sent-up GPA</p>
+                    <p class="info-data">3.65 (A+)</p>
+                </div>
+            </div>
+
+            <div class="btn-row">
+                <button class="btn btn-primary"><i class="fas fa-edit"></i>&nbsp; Update Records</button>
+                <button class="btn btn-outline"><i class="fas fa-download"></i>&nbsp; Download Admit Card</button>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <strong>LearnIn</strong> · &copy; 2081/2082 Sagarmatha Secondary School ·
+            Affiliated with <span class="accent">NEB</span>
+        </footer>
+    </div>
+
+</body>
+
+</html>
