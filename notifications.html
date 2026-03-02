@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Notifications - LearnIn">
+    <title>Notifications | LearnIn</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="mob-header">
+        <a href="index.html">Learn<span>In</span></a>
+        <label for="sidebar-toggle" class="menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+    <label for="sidebar-toggle" class="overlay"></label>
+
+    <aside class="sidebar">
+        <div class="sidebar-logo"><a href="index.html">Learn<span>In</span></a></div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="nav-link"><i class="fas fa-th-large"></i> Dashboard</a>
+            <a href="attendance.html" class="nav-link"><i class="fas fa-calendar-check"></i> Attendance</a>
+            <a href="routine.html" class="nav-link"><i class="fas fa-clock"></i> Routine</a>
+            <a href="notifications.html" class="nav-link active"><i class="fas fa-bell"></i> Notifications</a>
+            <a href="profile.html" class="nav-link"><i class="fas fa-user"></i> Profile</a>
+        </nav>
+        <div class="sidebar-user">
+            <img src="https://ui-avatars.com/api/?name=Aavash+Sharma&background=e8723a&color=fff&size=76"
+                alt="Aavash Sharma" class="avatar">
+            <div class="user-info">
+                <p>Aavash Sharma</p><small>Grade 12 · Science</small>
+            </div>
+        </div>
+    </aside>
+
+    <div class="main">
+        <header class="top-bar">
+            <h1>Notifications</h1>
+            <div class="top-right">
+                <span class="date-info">3 unread</span>
+                <a href="notifications.html" class="bell"><i class="fas fa-bell"></i><span class="bell-dot"></span></a>
+            </div>
+        </header>
+
+        <main class="content">
+
+            <h2 class="sec-heading" style="margin-top:0">Recent</h2>
+
+            <div class="notif-list">
+
+                <!-- unread ones -->
+                <div class="notif unread">
+                    <div class="notif-badge red"><i class="fas fa-exclamation-circle"></i></div>
+                    <div class="notif-text">
+                        <p class="bold">Attendance Warning — English</p>
+                        <p class="small gray">Your English attendance is at 76%, close to the 75% NEB minimum. Please
+                            attend regularly.</p>
+                        <small>Falgun 15, 2081 · 10:30 AM</small>
+                    </div>
+                </div>
+
+                <div class="notif unread">
+                    <div class="notif-badge orange"><i class="fas fa-bullhorn"></i></div>
+                    <div class="notif-text">
+                        <p class="bold">Pre-Board Exam Schedule Released</p>
+                        <p class="small gray">Pre-board examinations will begin from Chaitra 01. Collect your admit card
+                            from the office.</p>
+                        <small>Falgun 14, 2081 · 02:00 PM</small>
+                    </div>
+                </div>
+
+                <div class="notif unread">
+                    <div class="notif-badge blue"><i class="fas fa-clock"></i></div>
+                    <div class="notif-text">
+                        <p class="bold">Routine Updated for Next Week</p>
+                        <p class="small gray">Physics and Chemistry periods have been swapped on Wednesday. Check the
+                            updated routine.</p>
+                        <small>Falgun 13, 2081 · 04:15 PM</small>
+                    </div>
+                </div>
+
+            </div>
+
+            <h2 class="sec-heading">Earlier</h2>
+
+            <div class="notif-list">
+
+                <div class="notif">
+                    <div class="notif-badge green"><i class="fas fa-check-circle"></i></div>
+                    <div class="notif-text">
+                        <p class="bold">Fees Payment Confirmed</p>
+                        <p class="small gray">Your Term II fee payment of Rs. 12,500 has been received. Receipt No:
+                            4521.</p>
+                        <small>Falgun 08, 2081 · 11:00 AM</small>
+                    </div>
+                </div>
+
+                <div class="notif">
+                    <div class="notif-badge orange"><i class="fas fa-trophy"></i></div>
+                    <div class="notif-text">
+                        <p class="bold">Sent-up Results Published</p>
+                        <p class="small gray">Sent-up examination results are now available. Your GPA: 3.65 (A+). Check
+                            your profile.</p>
+                        <small>Falgun 05, 2081 · 09:00 AM</small>
+                    </div>
+                </div>
+
+                <div class="notif">
+                    <div class="notif-badge blue"><i class="fas fa-book"></i></div>
+                    <div class="notif-text">
+                        <p class="bold">NEB Model Questions Available</p>
+                        <p class="small gray">NEB 2081 model question sets for Physics, Chemistry, and Mathematics are
+                            now in the library.</p>
+                        <small>Magh 28, 2081 · 03:30 PM</small>
+                    </div>
+                </div>
+
+                <div class="notif">
+                    <div class="notif-badge green"><i class="fas fa-user-check"></i></div>
+                    <div class="notif-text">
+                        <p class="bold">Profile Verified by Admin</p>
+                        <p class="small gray">Your student profile and NEB symbol number have been verified and
+                            confirmed.</p>
+                        <small>Magh 20, 2081 · 01:00 PM</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <strong>LearnIn</strong> · &copy; 2081/2082 Sagarmatha Secondary School ·
+            Affiliated with <span class="accent">NEB</span>
+        </footer>
+    </div>
+
+</body>
+
+</html>
