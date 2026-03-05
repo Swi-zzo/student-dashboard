@@ -1,11 +1,12 @@
 /*
-   learnin - student portal css
-   poppins font, orange accent
+   LearnIn Student Portal — Stylesheet
+   Stack: Poppins, orange brand accent (#e8723a)
+   Last touched: March 2082 B.S.
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* main colors */
+/* brand tokens */
 :root {
     --accent: #e8723a;
     --accent-light: #fff4ed;
@@ -47,7 +48,7 @@ button {
 }
 
 
-/* sidebar */
+/* fixed left nav sidebar */
 
 .sidebar {
     width: 240px;
@@ -139,7 +140,7 @@ button {
 }
 
 
-/* main content area */
+/* right-side content wrapper (offset from sidebar) */
 
 .main {
     margin-left: 240px;
@@ -209,9 +210,9 @@ button {
 }
 
 
-/* mobile sidebar toggle */
+/* mobile hamburger drawer — checkbox hack */
 
-#sidebar-toggle {
+#nav-drawer-toggle {
     display: none;
 }
 
@@ -567,21 +568,21 @@ tbody tr:hover {
     flex-wrap: wrap;
 }
 
-.info-boxes {
+.profile-fields-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 12px;
     margin-bottom: 25px;
 }
 
-.info-box {
+.profile-field-card {
     background: #fff;
     border: 1px solid #ebebeb;
     border-radius: 6px;
     padding: 14px 16px;
 }
 
-.info-title {
+.field-label {
     font-size: 0.7rem;
     color: #a3a3a3;
     text-transform: uppercase;
@@ -590,14 +591,13 @@ tbody tr:hover {
     font-weight: 500;
 }
 
-.info-data {
+.field-value {
     font-size: 0.9rem;
     font-weight: 600;
 }
 
 
-/* buttons */
-
+/* action buttons — profile page */
 .btn-row {
     display: flex;
     gap: 12px;
@@ -622,22 +622,24 @@ tbody tr:hover {
     transform: translateY(-1px);
 }
 
-.btn-primary {
+/* primary submit — e.g. Update Records */
+.btn-submit {
     background: var(--accent);
     color: #fff;
 }
 
-.btn-primary:hover {
+.btn-submit:hover {
     background: var(--accent-dark);
 }
 
-.btn-outline {
+/* secondary ghost — e.g. Download Admit Card */
+.btn-ghost {
     background: #fff;
     color: #111;
     border: 1px solid #ebebeb;
 }
 
-.btn-outline:hover {
+.btn-ghost:hover {
     border-color: var(--accent);
     color: var(--accent);
 }
@@ -777,11 +779,11 @@ tbody tr:hover {
         z-index: 200;
     }
 
-    #sidebar-toggle:checked~.sidebar {
+    #nav-drawer-toggle:checked~.sidebar {
         transform: translateX(0);
     }
 
-    #sidebar-toggle:checked~.overlay {
+    #nav-drawer-toggle:checked~.overlay {
         display: block;
     }
 
@@ -802,7 +804,7 @@ tbody tr:hover {
     }
 
     .dash-cards,
-    .info-boxes {
+    .profile-fields-grid {
         grid-template-columns: 1fr;
     }
 

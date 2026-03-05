@@ -4,67 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="student dashboard">
-    <title>Dashboard</title>
+    <meta name="description" content="LearnIn dashboard — Swikar Dhungel, Grade 12, SOSHGS Itahari">
+    <title>Dashboard · LearnIn</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- mobile toggle -->
-    <input type="checkbox" id="sidebar-toggle">
+    <!--
+        Hamburger drawer uses a hidden checkbox — clicking the label
+        toggles the sidebar on mobile. No JS needed for this.
+    -->
+    <input type="checkbox" id="nav-drawer-toggle">
 
-    <div class="mob-header">
+    <div class="topbar-mobile">
         <a href="index.html">Learn<span>In</span></a>
-        <label for="sidebar-toggle" class="menu-btn" aria-label="Toggle menu">
+        <label for="nav-drawer-toggle" class="menu-btn" aria-label="Toggle menu">
             <i class="fas fa-bars"></i>
         </label>
     </div>
 
-    <label for="sidebar-toggle" class="overlay"></label>
+    <label for="nav-drawer-toggle" class="overlay"></label>
 
-    <!-- sidebar -->
     <aside class="sidebar">
-        <div class="sidebar-logo">
+        <div class="sidenav-brand">
             <a href="index.html">Learn<span>In</span></a>
         </div>
 
-        <nav class="sidebar-nav">
-            <a href="index.html" class="nav-link active">
+        <nav class="sidenav-links">
+            <a href="index.html" class="sidenav-item active">
                 <i class="fas fa-th-large"></i> Dashboard
             </a>
-            <a href="attendance.html" class="nav-link">
+            <a href="attendance.html" class="sidenav-item">
                 <i class="fas fa-calendar-check"></i> Attendance
             </a>
-            <a href="routine.html" class="nav-link">
+            <a href="routine.html" class="sidenav-item">
                 <i class="fas fa-clock"></i> Routine
             </a>
-            <a href="notifications.html" class="nav-link">
+            <a href="notifications.html" class="sidenav-item">
                 <i class="fas fa-bell"></i> Notifications
             </a>
-            <a href="profile.html" class="nav-link">
+            <a href="profile.html" class="sidenav-item">
                 <i class="fas fa-user"></i> Profile
             </a>
         </nav>
 
-        <div class="sidebar-user">
-            <img src="https://ui-avatars.com/api/?name=Aavash+Sharma&background=e8723a&color=fff&size=76"
-                alt="Aavash Sharma" class="avatar">
+        <div class="sidenav-footer-user">
+            <img src="https://ui-avatars.com/api/?name=Swikar+Dhungel&background=e8723a&color=fff&size=76"
+                alt="Swikar Dhungel" class="avatar">
             <div class="user-info">
-                <p>Aavash Sharma</p>
+                <p>Swikar Dhungel</p>
                 <small>Grade 12 · Science</small>
             </div>
         </div>
     </aside>
 
-    <!-- main page -->
     <div class="main">
 
-        <header class="top-bar">
+        <header class="page-header">
             <h1>Dashboard</h1>
-            <div class="top-right">
-                <span class="date-info">
+            <div class="header-actions">
+                <span class="header-meta">
                     <i class="far fa-calendar-alt"></i>&nbsp; Falgun 15, 2081 BS
                 </span>
                 <a href="notifications.html" class="bell" aria-label="Notifications">
@@ -76,59 +77,59 @@
 
         <main class="content">
 
-            <p class="welcome">Namaste, Aavash 👋</p>
+            <p class="welcome">Namaste, Swikar 👋</p>
             <p class="welcome-sub">Here's your academic summary for today.</p>
 
-            <!-- dashboard cards -->
-            <div class="dash-cards">
+            <!-- three quick-glance cards linking to each section -->
+            <div class="overview-grid">
 
-                <a href="attendance.html" class="card-link">
+                <a href="attendance.html" class="overview-card-link">
                     <div class="card">
-                        <div class="card-top">
-                            <div class="card-icon green">
+                        <div class="overview-card-header">
+                            <div class="overview-icon green">
                                 <i class="fas fa-calendar-check"></i>
                             </div>
                             <span class="arrow"><i class="fas fa-arrow-right"></i></span>
                         </div>
-                        <p class="card-label">Today's Attendance</p>
-                        <p class="card-number green">Present</p>
-                        <p class="card-note">Overall: 92% this month</p>
+                        <p class="overview-label">Today's Attendance</p>
+                        <p class="overview-value green">Present</p>
+                        <p class="overview-note">Overall: 92% this month</p>
                     </div>
                 </a>
 
-                <a href="routine.html" class="card-link">
+                <a href="routine.html" class="overview-card-link">
                     <div class="card">
-                        <div class="card-top">
-                            <div class="card-icon blue">
+                        <div class="overview-card-header">
+                            <div class="overview-icon blue">
                                 <i class="fas fa-clock"></i>
                             </div>
                             <span class="arrow"><i class="fas fa-arrow-right"></i></span>
                         </div>
-                        <p class="card-label">Classes Today</p>
-                        <p class="card-number">8 Periods</p>
-                        <p class="card-note">Next: Chemistry · 3rd Period</p>
+                        <p class="overview-label">Classes Today</p>
+                        <p class="overview-value">8 Periods</p>
+                        <p class="overview-note">Next: Chemistry · 3rd Period</p>
                     </div>
                 </a>
 
-                <a href="profile.html" class="card-link">
+                <a href="profile.html" class="overview-card-link">
                     <div class="card">
-                        <div class="card-top">
-                            <div class="card-icon purple">
+                        <div class="overview-card-header">
+                            <div class="overview-icon purple">
                                 <i class="fas fa-award"></i>
                             </div>
                             <span class="arrow"><i class="fas fa-arrow-right"></i></span>
                         </div>
-                        <p class="card-label">Sent-up Exam GPA</p>
-                        <p class="card-number">3.65</p>
-                        <p class="card-note">Grade A+ · Intermediate</p>
+                        <p class="overview-label">Sent-up Exam GPA</p>
+                        <p class="overview-value">3.72</p>
+                        <p class="overview-note">Grade A+ · Intermediate</p>
                     </div>
                 </a>
 
             </div>
 
-            <!-- this week's attendance -->
-            <h2 class="sec-heading">This Week's Attendance</h2>
-            <div class="table-box">
+            <!-- pulled from tbl_attendance, filtered to current week -->
+            <h2 class="section-title">This Week's Attendance</h2>
+            <div class="data-table-wrap">
                 <table>
                     <thead>
                         <tr>
@@ -172,9 +173,9 @@
                 </table>
             </div>
 
-            <!-- today's routine -->
-            <h2 class="sec-heading">Today's Routine (Sunday)</h2>
-            <div class="table-box">
+            <!-- shows today's periods — Sunday schedule by default -->
+            <h2 class="section-title">Today's Routine (Sunday)</h2>
+            <div class="data-table-wrap">
                 <table>
                     <thead>
                         <tr>
@@ -231,7 +232,7 @@
         </main>
 
         <footer class="footer">
-            <strong>LearnIn</strong> · &copy; 2081/2082 Sagarmatha Secondary School ·
+            <strong>LearnIn</strong> · &copy; 2081/2082 SOSHGS, Itahari ·
             Affiliated with <span class="accent">NEB</span>
         </footer>
 
